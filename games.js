@@ -91,7 +91,6 @@ const games = ` [
 ]
 `
 const template = `
-{
 "name": "",
 "description": "",
 "pledged": 0,
