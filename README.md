@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/GvBDuDc" data-context="false" ><a href="//imgur.com/a/GvBDuDc">Web 102 Prework - Website Walkthrough</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+https://imgur.com/GvBDuDc 
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCap.
@@ -38,7 +38,8 @@ GIF created with LiceCap.
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+* When I was trying to add the search button, it wouldn't work properly. If someone was searching for "Tycoon", results with "tycoon" wouldn't show up. I solved this problem by converting the name of each game and the game we are trying to search for to lowercase before comparing.
+* 
 
 ## License
 
