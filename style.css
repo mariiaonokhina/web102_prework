@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #E5EDF1;
 }
 
 #tentacles {
@@ -11,7 +11,7 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
+    background-color: #96C2DB;
     padding: 1%;
     align-items: center;
     margin-left: -10px;
@@ -22,7 +22,7 @@ body {
 .stats-container {
     display: flex;
     align-items: stretch;
-    background-color: blue;    /*Added CSS rule*/
+    background-color: #96C2DB;
 }
 
 .stats-container:hover {
@@ -74,9 +74,16 @@ body {
 }
 
 button {
+    background-color: #96C2DB;
     font-family: 'Cabin';
     border: none;
-    padding: 1%;
+    padding: 1.5%;
     margin: 1%;
     border-radius: 7px;
+    cursor: pointer;
+    font-size: large;
+}
+
+h2, #description-container {
+    text-align: center;
 }

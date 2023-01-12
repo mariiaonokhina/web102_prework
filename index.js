@@ -178,11 +178,23 @@ const topFunded = mostFunded[0];
 const runnerUp = mostFunded[1];
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
-const topFundedParagraph = document.createElement('p');
-topFundedParagraph.innerHTML = topFunded.name;
-firstGameContainer.append(topFundedParagraph);
+const topFundedDiv = document.createElement('div');
+
+topFundedDiv.innerHTML = `
+    <div>
+        <h1>${topFunded.name}</h1>
+        <p>${topFunded.description}</p>
+        <img src="${topFunded.img}" width="85%" height="85%" />
+    </div>`;
+
+firstGameContainer.append(topFundedDiv);
 
 // do the same for the runner up item
-const runnerUpParagraph = document.createElement('p');
-runnerUpParagraph.innerHTML = runnerUp.name;
-secondGameContainer.append(runnerUpParagraph);
+const runnerUpDiv = document.createElement('div');
+runnerUpDiv.innerHTML = `
+<div>
+    <h1>${runnerUp.name}</h1>
+    <p>${runnerUp.description}</p>
+    <img src="${runnerUp.img}" width="85%" height="85%" />
+</div>`;
+secondGameContainer.append(runnerUpDiv);
