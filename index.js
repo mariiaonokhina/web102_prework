@@ -5,7 +5,6 @@
 */
 
 // import the JSON data about the crowd funded games from the games.js file
-import games from './games.js';
 import GAMES_DATA from './games.js';
 
 // create a list of objects to store the data about the games using JSON.parse
@@ -174,7 +173,16 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const mostFunded = [sortedGames[0], sortedGames[1], ...sortedGames];
+const topFunded = mostFunded[0];
+const runnerUp = mostFunded[1];
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const topFundedParagraph = document.createElement('p');
+topFundedParagraph.innerHTML = topFunded.name;
+firstGameContainer.append(topFundedParagraph);
 
 // do the same for the runner up item
+const runnerUpParagraph = document.createElement('p');
+runnerUpParagraph.innerHTML = runnerUp.name;
+secondGameContainer.append(runnerUpParagraph);
