@@ -39,7 +39,6 @@ GIF created with LiceCap.
 ## Notes
 
 * When I was trying to add the search button, it wouldn't work properly. If someone was searching for "Tycoon", results with "tycoon" wouldn't show up. I solved this problem by converting the name of each game and the game we are trying to search for to lowercase before comparing.
-* 
 
 ## License
 
