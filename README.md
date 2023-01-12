@@ -1,8 +1,8 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - *SeaCrowdy*
 
 Submitted by: **Mariia Onokhina**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**SeaCrowdy** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
 Time spent: **6** hours spent in total
 
@@ -17,7 +17,11 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [X] List anything else that you can get done to improve the app functionality!
+* [X] The website now has pleasant color scheme.
+* [X] The search bar in the upper right corner allows the user to search for a game they have heard of. The results will be displayed in the Our Games section. If the game does not exist, "No such results" is displayed.
+* [X] The top two most funded games section now has the images from those games.
+* [X] All text is centered.
+* [X] Added black border to the Stats section.
 
 ## Video Walkthrough
 
@@ -26,7 +30,7 @@ Here's a walkthrough of implemented features:
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with LiceCap.
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -38,7 +42,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Mariia Onokhina]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
