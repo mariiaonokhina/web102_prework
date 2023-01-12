@@ -13,10 +13,37 @@ body {
     display: flex;
     background-color: #96C2DB;
     padding: 1%;
+    justify-content: space-between;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+}
+
+#logo {
+    display: flex;
+    justify-content: left;
+}
+
+#searchInput, #searchBtn {
+    height: 30px;
+    border-radius: 7px;
+}
+
+#searchInput {
+    cursor: text;
+    background-color: #E5EDF1;
+}
+
+#searchBtn {
+    cursor: pointer;
+    background-color: #E5EDF1;
+    font-weight: bold;
+}
+
+#searchBtn:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .stats-container {
@@ -31,7 +58,8 @@ body {
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    border-color: black;
+    border: 5px solid;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -73,7 +101,7 @@ body {
     text-align: center;
 }
 
-button {
+#button-container button {
     background-color: #96C2DB;
     font-family: 'Cabin';
     border: none;

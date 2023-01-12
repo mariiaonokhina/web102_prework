@@ -42,8 +42,7 @@ function addGamesToPage(games) {
                 <p>${games[i].description}</p>
                 <img src="${games[i].img}" width="100%" height="100%" />
             </div>`;
-
-        // append the game to the games-container
+        
         gamesContainer.append(newDiv);
     }
 }
@@ -198,3 +197,31 @@ runnerUpDiv.innerHTML = `
     <img src="${runnerUp.img}" width="85%" height="85%" />
 </div>`;
 secondGameContainer.append(runnerUpDiv);
+
+// CUSTOMIZATIONS
+// Search button functionality
+const searchBtn = document.getElementById('searchBtn');
+
+function search() {
+    deleteChildElements(gamesContainer);
+
+    const searchInput = document.getElementById('searchInput');
+    const gameToBeFound = (searchInput.value).toLowerCase();
+    const searchResults = [];
+
+    for(let i = 0; i < GAMES_JSON.length; i++) {
+        let lowercaseName = GAMES_JSON[i].name.toLowerCase();
+        if(lowercaseName.includes(gameToBeFound)) {
+            searchResults.push(GAMES_JSON[i]);
+        }
+    }
+
+    if(searchResults.length == 0) {
+        gamesContainer.append("No such results :(");
+    }
+    else {
+        addGamesToPage(searchResults)
+    }
+}
+
+searchBtn.addEventListener("click", search)
